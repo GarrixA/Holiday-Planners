@@ -26,13 +26,14 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  place-items: start;
   min-width: 320px;
   min-height: 100vh;
+  background-color: rgb(114, 251, 205);
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 1.2em;
   line-height: 1.1;
 }
 
