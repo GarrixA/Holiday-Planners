@@ -1,11 +1,8 @@
-#root {
-  max-width: 1280px;
+*{
   margin: 0;
-  padding: 0rem;
-  text-align: start;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  
+body{
+  background-color: rgb(46, 89, 129);
 }
-
