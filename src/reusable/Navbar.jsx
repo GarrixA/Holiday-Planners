@@ -6,8 +6,7 @@ import { BsTwitter } from 'react-icons/bs';
 import { IoSearchCircleOutline } from 'react-icons/io5'
 
 import image from '../images/logo-s.png'
-// import Hamburger from 'hamburger-react';
-import RenderModal from '../components/RenderModal';
+import Menu from '../components/Menu';
 
 
 
@@ -46,10 +45,8 @@ function Navbar() {
                   <li>< IoSearchCircleOutline/></li>
                 </ul>
               </div>
-              <div className="menu">
-              <RenderModal/>
-                
-                
+              <div className="menu">   
+                <Menu/>
               </div>
             </div>
         </div>
