@@ -11,7 +11,11 @@ import { FiSearch } from 'react-icons/fi';
 
 
 
+
 function Navbar() {
+
+ 
+
   return (
     <div className="wrap">
       <div className='main-wrap'>
@@ -54,12 +58,14 @@ function Navbar() {
                   <FiSearch color='#c29d59'/>
                 </p>
               </div>
-              <div className="menu">   
-              {/* <Menu/> */}
+              <div className="men">
+                
+                
               </div>
             </div>
         </div>
         
+              
       </div>
       <div className='mn'>
       

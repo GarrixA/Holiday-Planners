@@ -2,7 +2,7 @@ import '../components/styles/home.css';
 import image1 from '../images/forest.jpg';
 import image2 from '../images/forest1.jpg';
 import image3 from '../images/forest2.jpg';
-import SlideShow from '../slide/SlideShow';
+
 
 const slides =[
     {
