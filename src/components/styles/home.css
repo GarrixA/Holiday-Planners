@@ -1,0 +1,70 @@
+.main-content{
+    background-color: red;
+    height: 100vh;
+    background-image: url('../../images/mountain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.key{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    padding-top: 10px;
+}
+
+.di{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.di h2{
+    font-size: 2rem;
+    color: #000;
+    margin-top: 12px;
+}
+
+.di p{
+    font-size: 1.4rem;
+    margin-top: 12px;
+}
+
+
+/* buttons */
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+    
+}
+.prev{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 28rem;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: 1px;
+    border-radius: 2px;
+}
+.next{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 28rem;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: 1px;
+    border-radius: 2px;
+}
+

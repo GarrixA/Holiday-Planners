@@ -3,10 +3,11 @@ import './reusable.css'
 import { FaFacebookF } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import { BsTwitter } from 'react-icons/bs';
-import { IoSearchCircleOutline } from 'react-icons/io5'
-
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsTelephoneFill } from 'react-icons/bs';
 import image from '../images/logo-s.png'
-import Menu from '../components/Menu';
+import { FiSearch } from 'react-icons/fi';
+
 
 
 
@@ -16,17 +17,25 @@ function Navbar() {
       <div className='main-wrap'>
         <div className="black-nav">
           <div  className='contacts'>
+            <div className='flex-icon'>
+              <HiOutlineMail color='#c29d59' className='icons1'/>
               <h1>aphrogarrix10@gmail.com</h1>
+            </div>
+              
               <hr />
-              <h1>0789438437</h1>
+              <div className='flex-icon'>
+                <BsTelephoneFill color='#c29d59'className='icons1'/>
+                <h1>0789438437</h1>
+              </div>
+              
           </div>
           <div className='socials'>
               <ul>
-                <li><FaFacebookF background-color='#c29d59'/> </li>
+                <li><FaFacebookF color='#c29d59' className='icons'/> </li>
                 <hr />
-                <li><GrInstagram/></li>
+                <li><GrInstagram color='#c29d59' className='icons'/></li>
                 <hr />
-                <li><BsTwitter/></li>
+                <li><BsTwitter color='#c29d59' className='icons'/></li>
               </ul>
           </div>
 
@@ -41,15 +50,19 @@ function Navbar() {
                 <button>Reserve</button>
               </div>
               <div className="search">
-                <ul>
-                  <li>< IoSearchCircleOutline/></li>
-                </ul>
+                <p className='sa'>
+                  <FiSearch color='#c29d59'/>
+                </p>
               </div>
               <div className="menu">   
-                <Menu/>
+              {/* <Menu/> */}
               </div>
             </div>
         </div>
+        
+      </div>
+      <div className='mn'>
+      
       </div>
 
       {/* <NavForm/> */}

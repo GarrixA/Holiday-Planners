@@ -1,22 +1,31 @@
-import { useState } from 'react'
-import { AiFillHome } from 'react-icons/ai'
+import React from 'react';
 import './App.css'
-import Navbar from './reusable/Navbar'
-import './index.css'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import About from './components/About'
+import Layout from './components/Layout'
+import Home from './components/Home'
+import Nopage from './components/Nopage';
+import Contacts from './components/Contacts';
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-    <div>
-    <Navbar/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>} />
+          <Route path="About" element={<About/>} />
+          <Route path="Contacts" element={<Contacts/>}/>
+          <Route path="*" element={<Nopage/>}/>
+      </Route>
+      </Routes>
+    </BrowserRouter>
     
-    
-    </div>
     </>
   )
 }
