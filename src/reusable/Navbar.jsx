@@ -5,8 +5,12 @@ import { GrInstagram } from 'react-icons/gr';
 import { BsTwitter } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsTelephoneFill } from 'react-icons/bs';
-import image from '../images/logo-s.png'
+import image from '../images/logo-s.png';
 import { FiSearch } from 'react-icons/fi';
+import { BiMenuAltRight } from 'react-icons/bi'
+import { useState } from 'react';
+import '../components/styles/modal.css'
+import Modal from '../components/Modal'
 
 
 
@@ -14,7 +18,7 @@ import { FiSearch } from 'react-icons/fi';
 
 function Navbar() {
 
- 
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <div className="wrap">
@@ -58,9 +62,11 @@ function Navbar() {
                   <FiSearch color='#c29d59'/>
                 </p>
               </div>
-              <div className="men">
-                
-                
+              <div className="menu">
+                <button onClick={() => setOpenModal(true)} > 
+                <BiMenuAltRight/>
+                </button>
+                {openModal && <Modal closeModal={setOpenModal}/>}
               </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 .main-content{
-    background-color: red;
+    /* background-color: red; */
     height: 100vh;
-    background-image: url('../../images/mountain.jpg');
+    background-image: url('../../images/10003.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -50,7 +50,7 @@
     margin-top: 28rem;
     padding: 12px;
     font-size: 1.2rem;
-    color: #fff;
+    color: #c29d59;
     border: 1px;
     border-radius: 2px;
 }
@@ -63,7 +63,7 @@
     margin-top: 28rem;
     padding: 12px;
     font-size: 1.2rem;
-    color: #fff;
+    color: #c29d59;
     border: 1px;
     border-radius: 2px;
 }

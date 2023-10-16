@@ -1,15 +1,13 @@
+
+
 .about{
     width: 100%;
     height: 100vh;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    /* background-image: url('../../images/cal.jpg'); */
+    background-size: cover;
+    background-position: center;
     
-}
-
-.main-about img{
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 .main-about h1{
@@ -18,4 +16,126 @@
     margin-top: rem;
     margin-left: 32rem;
     font-size: 3rem;
+}
+
+.where form input{
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1.8px solid black;    
+}
+
+.where form button{
+    background-color: #c29d59;
+    border: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.where form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.where{
+    background-color: #fff;
+    width: 85%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4.3rem;
+    padding: 12px;
+    /* border-bottom: 4px solid #00020084; */
+    position: relative;
+    bottom: 35px;
+    border-right: 4px solid #c29d59;
+    border-left: 4px solid #c29d59;
+}
+
+.m-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.m-part .image{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.m-part .image .back{
+    width: 450px;
+    height: 450px;
+    
+}
+
+.m-part .image .back img{
+    width: 440px;
+    height: 440px;
+    margin: 0px;
+    border: 8px solid #c29d59;
+    background-color: #fff;
+    padding: 6px;
+}
+
+.m-part .image .front{
+    width: 280px;
+    height: 250px;
+    position: relative;
+    bottom: 15rem;
+    left: 13rem;
+}
+
+.image .front img{
+    margin: 0px;
+    height: 250px;
+    width: 280px;
+    border: 6px solid #c29d59; 
+    padding: 4px;
+    background-color: #fff;   
+}
+
+.m-part .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 4.8rem;
+    margin-right: 14px;
+}
+
+.m-part .texts h3, h1, p{
+    font-size: large;
+}
+
+.m-part .texts h3{
+    font-size: 1.6rem;
+    color: #c29d59;
+}
+
+.m-part .texts h1{
+    color: black;
+    font-size: 2rem;
+}
+
+.us{
+    display: flex;
+    flex-direction: row;
+    width: 8rem;
+    height: 30px;
+    gap: 8px;
+    align-items: center;
+}
+.us .line{
+    width: 4px;
+    height: 25px;
+    background-color: #c29d59;
 }

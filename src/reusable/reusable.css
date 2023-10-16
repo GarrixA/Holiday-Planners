@@ -76,6 +76,19 @@ img{
     height: 50px;
     background-color: #c29d59;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu button{
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid #c29d59;
+    background-color: #c29d59;
+    border-radius: 12px;
+    margin-top: 5px;
+
 }
 
 .nw-others{

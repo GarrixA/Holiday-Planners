@@ -6,17 +6,17 @@ import image3 from '../images/forest2.jpg';
 
 const slides =[
     {
-        image: {image1},
+        image: image1,
         tittle1: "Get Ready to Travel",
         paragraph1: "The world.",
         description1: "A jurney of a thousand miles starts with a single step. Import a full demo with one click and create a head-turning website for your travel agancy."
     },{
-        image: {image2},
+        image: image2,
         tittle2: "Enjoy The Travel With",
         paragraph2: "Holiday Planners",
         description2: "A jurney of a thousand miles starts with a single step. Import a full demo with one click and create a head-turning website for your travel agancy."
     },{
-        image: {image3},
+        image: image3,
         tittle: "Life is Short and",
         paragraph: "The World is Wide",
         description: "A jurney of a thousand miles starts with a single step. Import a full demo with one click and create a head-turning website for your travel agancy."
