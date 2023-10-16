@@ -14,7 +14,7 @@ function Home() {
                 <div className="di">
                   {/* <img src={slide.image} */}
                   <h2>{slide.tittle2}</h2>
-                  <h2 style={{backgroundColor: "red"}}>{slide.paragraph2}</h2>
+                  <h2 style={{backgroundColor: "#c29d59"}}>{slide.paragraph2}</h2>
                 <p>{slide.description2}</p>
               </div>
             </div>

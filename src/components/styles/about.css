@@ -139,3 +139,13 @@
     height: 25px;
     background-color: #c29d59;
 }
+
+.read button{
+    padding: 8px; 
+    border: 1px solid #c29d59;
+    background-color: #c29d59;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2rem;
+}

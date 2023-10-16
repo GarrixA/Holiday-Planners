@@ -19,3 +19,99 @@
 
 }
 
+.details{
+    background-color: #ffffff;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+
+.details form{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-left: 7rem;
+    position: relative;
+    bottom: -60px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.096);
+}
+
+.details form input{
+    width: 40%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+.details textarea{
+    width: 90%;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 4px;
+}
+
+
+
+.tittle{
+    display: flex;
+    gap: 8px;
+    margin-left: 9px;
+}
+
+ 
+.why{
+    position: relative;
+    bottom: 20px;
+    background-color: #ffff;
+    padding-top: 12px;
+    width: 60%;
+    height: 12rem;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.098);
+}
+
+.ask{
+    display: flex;
+    margin-left: 4px;
+    gap: 4px;
+    padding: 15px;
+}
+
+.ybook{
+    width: 5px;
+    height: 20px;
+    background-color: #c29d59;
+}
+
+
+
+.question{
+    width: 60%;
+    background-color: #c29d59;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.098);
+    
+}
+
+.que{
+    width: 4px;
+    height: 25px;
+    margin-left: 8px;
+    background-color: black;
+}
+
+.question .div, .phone, .email{
+    margin-left: 16px;
+} 

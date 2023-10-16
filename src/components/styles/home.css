@@ -22,14 +22,18 @@
 }
 
 .di h2{
-    font-size: 2rem;
+    font-size: 5rem;
     color: #000;
     margin-top: 12px;
+    color: #fff;
 }
 
 .di p{
-    font-size: 1.4rem;
+    font-size: 3rem;
     margin-top: 12px;
+    margin-left: 22px;
+    margin-right: 6px;
+    color: #fff;
 }
 
 
@@ -38,19 +42,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: red;
+    background-color: #c29d59;
     
 }
 .prev{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: absolute;
     left: 0;
     top: 0;
     margin-top: 28rem;
     padding: 12px;
     font-size: 1.2rem;
-    color: #c29d59;
+    background-color: #c29d59;
     border: 1px;
     border-radius: 2px;
 }
@@ -63,7 +67,7 @@
     margin-top: 28rem;
     padding: 12px;
     font-size: 1.2rem;
-    color: #c29d59;
+    background-color: #c29d59;
     border: 1px;
     border-radius: 2px;
 }
