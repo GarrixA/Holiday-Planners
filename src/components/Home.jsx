@@ -1,6 +1,7 @@
 import slides from "../slide/SlideShow";
 import About from "./About";
 import Contacts from "./Contacts";
+import TourList from "./TourList";
 
 
 function Home() {
@@ -40,6 +41,7 @@ function Home() {
       </div>
       <About/>
       <Contacts/>
+      <TourList/>
     </div>
   );
 }

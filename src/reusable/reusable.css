@@ -2,12 +2,16 @@
     background-color: #262626;
     height: 5.2rem;
     position: relative;
+        
 }
 
 .black-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    background-color: #262626;
+    width: 100%;
 }
 
 .white-nav{
@@ -22,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
     
 }
 

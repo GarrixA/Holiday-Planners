@@ -1,0 +1,36 @@
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+.top-part{
+    width: 100%;
+    height: 30%;
+    background-image: url(../../images/10002.jpg);
+    background-size: cover;
+    background-position: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-part h1{
+    font-size: 8rem;
+}
+
+.inform{
+    margin-top: 12px;
+}
+
+.inform .middle{
+    border-top: 1px solid #0000006d;
+    border-bottom: 1px solid #0000006d;
+    padding-right: 16px;
+    
+}
+
+.inform .sides{
+    border: 1px solid #0000006d;
+    padding: 16px;
+}

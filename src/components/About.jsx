@@ -3,8 +3,6 @@ import '../components/styles/about.css'
 import front from '../images/10003.jpg'
 import back from '../images/10003.jpg'
 
-
-
 function About() {
 
   
@@ -45,8 +43,11 @@ function About() {
           
         </div>
       </div>
-      <div>
+      <div >
         
+      </div>
+      <div>
+
       </div>
     </div>
     

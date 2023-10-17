@@ -1,8 +1,10 @@
 import React from 'react'
+import './styles/trendings.css'
 
 function Trending() {
   return (
-    <div>
+    <div className='trends'>
+      
       
     </div>
   )
