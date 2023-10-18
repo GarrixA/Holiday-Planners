@@ -32,19 +32,19 @@ function Contacts() {
               <h1 style={{color: 'black'}}>WHY BOOK WITH US?</h1>
             </div>
             <div className="tittle">
-              <p> <MdArrowForwardIos/> </p>
+              <p> <MdArrowForwardIos style={{color: '#c29d59', fontSize: '1.5rem'}}/> </p>
               <h4 style={{color: 'gray'}}>Best Price Guarantee</h4>
             </div>
             <div className="tittle">
-            <p> <MdArrowForwardIos/> </p>
+            <p> <MdArrowForwardIos style={{color: '#c29d59', fontSize: '1.5rem'}}/> </p>
               <h4 style={{color: 'gray'}}>Customer care available 24/7</h4>
             </div>
             <div className="tittle">
-            <p> <MdArrowForwardIos/> </p>
+            <p> <MdArrowForwardIos style={{color: '#c29d59', fontSize: '1.5rem'}}/> </p>
               <h4 style={{color: 'grey'}}>Free Travel Insureance</h4>
             </div>
             <div className="tittle">
-            <p> <MdArrowForwardIos/> </p>
+            <p> <MdArrowForwardIos style={{color: '#c29d59', fontSize: '1.5rem'}}/> </p>
               <h4 style={{color: 'grey'}}>Hand-picked Tours & Activities</h4>
             </div>
 

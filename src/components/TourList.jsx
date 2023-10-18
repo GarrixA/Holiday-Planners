@@ -10,20 +10,39 @@ import { Link } from 'react-router-dom'
 
 function TourList() {
   return (
-    <div className='main'>
+    <div className='main' style={{
+      height: '535vh'
+    }}>
       <div className="images">
           <h1>Tour List</h1>
       </div>
       <div className="choose">
-        <p className='side' style={{borderLeft: '1px solid #0000003d'}}>Sort by:</p>
-        <p className='middle' style={{borderRight: '1px solid #0000003d', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>Release date <BiSolidDownArrow/></p>
-        <p className='side' style={{borderRight: '1px solid #0000003d', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>Descending <BiSolidDownArrow/></p>
+        <p className='side' style={{
+          borderLeft: '1px solid #0000003d',
+          color: 'black',
+          }}>Sort by:</p>
+        <p className='middle' style={{
+          borderRight: '1px solid #0000003d', 
+          display: 'flex', 
+          flexDirection: 'row', 
+          justifyContent: 'space-between',
+          color: 'black'
+          }}>Release date <BiSolidDownArrow/></p>
+        <p className='side' style={{
+          borderRight: '1px solid #0000003d', 
+          display: 'flex', 
+          flexDirection: 'row', 
+          justifyContent: 'space-between',
+          color: 'black'
+          }}>Descending <BiSolidDownArrow/></p>
       </div>
       <div className="tours">
         <div className='main-tour'>
           {
               tour.map(list =>(
-                <div key={list.id} className="">
+                <div key={list.id} style={{
+                  width: '40%'
+                }}>
                     <div className="tours-card">
                       <div className='image'>
                         <img src={list.image} alt="img" />
@@ -47,7 +66,11 @@ function TourList() {
 
                             <div className='book'>
                                 <h3>{dura.price}</h3>
-                                <button><Link to={'./OnePage'}>{dura.book}</Link></button>
+                                <button><Link style={{
+                                  textDecoration: 'none',
+                                  color: '#fff'
+                                }}
+                                 to={'../OnePage'}>{dura.book}</Link></button>
                             </div>
                         </div>
                         
