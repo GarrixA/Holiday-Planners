@@ -12,6 +12,7 @@
     position: fixed;
     background-color: #262626;
     width: 100%;
+    z-index: 3;
 }
 
 .white-nav{
@@ -27,6 +28,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 3;
     
 }
 

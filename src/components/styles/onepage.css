@@ -1,11 +1,10 @@
-main{
-    width: 100%;
-    height: 100vh;
+.main{
+    height: 220vh;
 }
 
 .top-part{
     width: 100%;
-    height: 30%;
+    height: 70vh;
     background-image: url(../../images/10002.jpg);
     background-size: cover;
     background-position: cover;
@@ -15,22 +14,199 @@ main{
     justify-content: center;
 }
 
-.top-part h1{
-    font-size: 8rem;
+
+.top-wrap > h1{
+    font-size: 1.7rem;
+    margin-top: 6rem;
+    margin-left: 2.2rem;
+    color: black;
 }
 
 .inform{
     margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 8rem;
 }
 
-.inform .middle{
+.inform .middles{
     border-top: 1px solid #0000006d;
     border-bottom: 1px solid #0000006d;
-    padding-right: 16px;
-    
+    width: 100%;
+    padding: .50rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    height: 2rem;
 }
 
 .inform .sides{
     border: 1px solid #0000006d;
-    padding: 16px;
+    /* width: 16rem; */
+    padding: .50rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    width: 100%;
+    height: 2rem;
+}
+
+.page-details{
+    width: 50%;
+    height: 130vh;
+    margin-left: 8rem;
+    margin-top: 3rem;
+    box-shadow: 1px 1px 30px 2px rgba(0,0,0,0.089);
+}
+
+.rect{
+    width: 55px;
+    height: 50px;
+    background-color: black;
+    border-bottom-left-radius: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rect h2, p{
+    color: #fff;
+    font-size: .98rem;
+}
+
+.circle{
+    width: 90px;
+    height: 90px;
+    background-color: #c29d59;
+    border-radius: 50%;
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.circle hr{
+    height: 0px;
+    width: 5rem;
+}
+
+.top-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.shades{
+    display: flex;
+}
+
+
+
+.profiles{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100px;
+    background-color: #c29d59;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 2.2rem;
+}
+
+.profiles > p{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.sub-prof{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-s{
+    margin-left: 2.2rem;
+    margin-top: 1.7rem;
+    width: 91%;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.video{
+    width: 90%;
+    height: 30vh;
+    background-color: #fff;
+    margin-left: 2.2rem;
+    margin-top: 1.7rem;
+}
+
+.left{
+    width: 50%;
+}
+.right{
+    height: 86vh;
+    /* background-color: red; */
+    width: 30%;
+    padding-top: 2rem;
+    position: relative;
+    bottom: 80px;
+    box-shadow: 1px 1px 3px 2px rgba(0,0,0,0.089);
+    background-color: #fff;
+}
+
+.right h1{
+    margin-left: 2.2rem;
+    padding: .49rem;
+}
+
+.holder{
+    display: flex;
+    gap: 5rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: .90rem;
+    width: 100%;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.inputs input{
+    height: 2rem;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1.4rem;
+}
+
+.inputs .box textarea{
+    width: 100%;
+}
+
+.box{
+    width: 100%;
+    height: 3rem;
+}
+label{
+    font-size: 1.3rem;
+}
+
+.booknow{
+    background-color: #c29d59;
+    border: 1px solid #c29d59;
+    width: 12rem;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    color: #fff;
 }

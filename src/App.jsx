@@ -8,6 +8,8 @@ import Nopage from './components/Nopage';
 import Contacts from './components/Contacts';
 import Trending from './components/Trending';
 import OnePage from './reusable/OnePage';
+import TourList from './components/TourList';
+import Login from './components/users/Login';
 
 
 
@@ -25,6 +27,8 @@ function App() {
           <Route path="Contacts" element={<Contacts/>}/>
           <Route path="Trending" element={<Trending/>} />
           <Route path="OnePage" element={<OnePage/>}/>
+          <Route path="TourList" element={<TourList/>}/>
+          <Route path="Login" element={<Login/>}/>
           <Route path="*" element={<Nopage/>}/>
       </Route>
       </Routes>

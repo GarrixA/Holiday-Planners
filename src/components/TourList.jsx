@@ -4,6 +4,7 @@ import './styles/tourlist.css'
 import {MdGroup} from 'react-icons/md'
 import {BsFillClockFill} from 'react-icons/bs'
 import {BiSolidDownArrow} from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 
 
@@ -46,7 +47,7 @@ function TourList() {
 
                             <div className='book'>
                                 <h3>{dura.price}</h3>
-                                <button>{dura.book}</button>
+                                <button><Link to={'./OnePage'}>{dura.book}</Link></button>
                             </div>
                         </div>
                         
