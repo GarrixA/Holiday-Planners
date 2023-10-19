@@ -7,12 +7,11 @@ import Home from './components/Home'
 import Nopage from './components/Nopage';
 import Contacts from './components/Contacts';
 import Trending from './components/Trending';
-import OnePage from './reusable/OnePage';
+import OnePage from './components/OnePage';
 import TourList from './components/TourList';
 import Login from './components/users/Login';
-
-
-
+import Signup from './components/users/Signup';
+import ResetP from './components/users/ResetP';
 
 function App() {
 
@@ -29,6 +28,8 @@ function App() {
           <Route path="OnePage" element={<OnePage/>}/>
           <Route path="TourList" element={<TourList/>}/>
           <Route path="Login" element={<Login/>}/>
+          <Route path="Signup" element={<Signup/>}/>
+          <Route path="ResetP" element={<ResetP/>}/>
           <Route path="*" element={<Nopage/>}/>
       </Route>
       </Routes>

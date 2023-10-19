@@ -1,0 +1,16 @@
+.inp{
+    height: 2rem;
+    border: 1px solid #6495ed;
+    border-radius: 4px;
+    font-size: large;
+    width: 70%;   
+}
+
+.signup > form{
+    background-color: #20b2ab7e;
+    width: 50%;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 3px 30px 30px 1px rgba(0, 0, 0, 0.429);
+}

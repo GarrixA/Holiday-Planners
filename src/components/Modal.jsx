@@ -19,13 +19,13 @@ function Modal({ closeModal }) {
         <img style={{height: '12rem', width: '25rem'}} src={imageLogo} alt="imag" />
        </div>
         <div className="wrapper">
-            <div className="navs">
+            <div className="navs" >
                 <span><Link to={'/'} onClick={() => closeModal(false)}>Home</Link></span>
                 <span><Link to={'./About'} onClick={() => closeModal(false)}> About</Link></span>
                 <span><Link to={'./Contacts'} onClick={() => closeModal(false)}>Contact Us</Link></span>
                 <span><Link to={'./TourList'} onClick={() => closeModal(false)}> Tour List</Link></span>
-                <span><Link >Sign Up</Link></span>
-                <span><Link>Login</Link></span>
+                <span><Link to={'./Signup'} onClick={() => closeModal(false)}> Sign Up</Link></span>
+                <span><Link to={'./Login'} onClick={() => closeModal(false)}>Login</Link></span>
             </div>
             <div className="social-s">
                 <BsFacebook style={{fontSize: '2rem', backgroundColor: 'c29d59', color: '#ffff', padding: '8px', borderRadius: '50px'}}/>

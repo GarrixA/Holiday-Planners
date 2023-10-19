@@ -1,5 +1,5 @@
 .modal-bg{
-    background-color: rgb(151, 143, 143);
+    background-color: #262626;
     width: 103%;
     height: 100vh;
     position: absolute;
@@ -26,36 +26,51 @@
     margin-right: 5rem;
 }
 
-.wrapper{
+.modal-cont > .wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #262626;
+    border: none;
 }
 
-.wrapper .navs{
+.modal-cont > .wrapper > .navs{
     display: flex;
     flex-direction: column;
-    background-color: beige;
-    width: 30%;
-    height: 25vh;
-    justify-content: center;
+    /* background-color: beige; */
+    width: 47%;
+    height: 40vh;
+    justify-content: space-evenly;
     gap: 8px;
+    background-color: #393939;
+    padding: 12px;
+    margin-left: 2rem;
 }
 
 .wrapper .navs span{
     margin-left: 5rem;
-    /* color: #fff; */
+    color: #fff;
+}
+
+.wrapper .navs span a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.wrapper .navs span a:hover{
+    color: #987c48;
+    
 }
 
 .social-s{
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    /* background-color: beige; */
     width: 20%;
     height: 26vh;
     margin-top: 4rem;
     justify-content: space-around;
-    background-image: url('../../images/10001.jpg');
     background-size: cover;
     background-position: center;
 }

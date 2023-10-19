@@ -17,8 +17,7 @@
 
 .white-nav{
     background-color: #ffff;
-    position: absolute;
-    top: 0;
+    top: 1;
     margin-top: 3.4rem;
     width: 95%;
     margin-left: 2rem;
@@ -29,6 +28,10 @@
     justify-content: space-between;
     position: fixed;
     z-index: 3;
+    position: relative;
+    top: 72px;
+   position: fixed;
+   top: 12px;
     
 }
 
