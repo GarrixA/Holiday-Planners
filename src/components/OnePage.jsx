@@ -17,7 +17,7 @@ function OnePage() {
   return (
     <div className='main'>
           <div className="top-part">
-            <h1 style={{fontSize: '6rem'}}>Italy</h1>
+            <h1 style={{fontSize: '6rem', color: "#fff"}}>Italy</h1>
           </div>
               <div className="left">
                 <div className="inform">

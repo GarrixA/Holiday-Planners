@@ -5,12 +5,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .tours{
     margin-left: 3.8rem;
-    height: 240vh;
-    /* background-color: #fff; */
+    height: 250vh;
+    display: flex;
+}
+
+h1{
+    color: black;
 }
 
 .tours-card{
@@ -22,6 +27,29 @@
 
 }
 
+.find{
+    box-shadow: 3px 2px 13px 1px rgba(0, 0, 0, 0.429);
+    height: 50rem;
+    position: relative;
+    bottom: 130px;
+    background-color: #fff;
+}
+
+.find > .text{
+    display: flex;
+    align-items: center;
+    margin: 18px;
+    gap: 8px;
+}
+.find > .text > h1{
+    font-size: 1.5rem;
+}
+
+.find > .text > .lin{
+    width:4px;
+    height: 40px;
+    background-color: #c29d59;
+}
 .tours-card .image{
     width: 100%;
     height: 14rem;
@@ -98,7 +126,7 @@
 
 .main .images{
     width: 100%;
-    height: 50%;
+    height: 20%;
     background-image: url(../../images/tourlist.jpg);
     background-size: cover;
     background-position: center;
@@ -143,3 +171,27 @@
     margin-left: 3rem;
 }
 
+.mins{
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+}
+
+.min > input{
+    width: 70%;
+    padding: 8px;
+    margin-top: 8px;
+    
+}
+
+.max > input{
+    width: 70%;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.max{
+    margin-left: 10px;
+}
