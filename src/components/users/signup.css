@@ -1,16 +1,35 @@
-.inp{
-    height: 2rem;
-    border: 1px solid #6495ed;
+/* .signups {
+    margin: 20px;
+  }
+  
+  .signups h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .signups input, .signups button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: large;
-    width: 70%;   
-}
-
-.signup > form{
-    background-color: #20b2ab7e;
-    width: 50%;
-    align-items: center;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    box-shadow: 3px 30px 30px 1px rgba(0, 0, 0, 0.429);
-}
+  }
+  
+  .signup-button {
+    background-color: #007bff; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signups .message {
+    color: #ff0000; 
+    margin-top: 10px;
+  }
+   */

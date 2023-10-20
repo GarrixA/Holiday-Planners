@@ -1,67 +1,61 @@
-import React from 'react';
-import './signup.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import './signup.css'
 
 function Signup() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSignup = (e) => {
+    e.preventDefault();
+
+    if (password !== confirmPassword) {
+      setMessage('Passwords do not match.');
+    } else {
+      setMessage('Thank you for signing up!');
+      console.log('Username:', username);
+      console.log('Password:', password);
+      setUsername('');
+      setPassword('');
+      setConfirmPassword('');
+    }
+  };
+
   return (
-    <div className='signup' style={{
-        width: '100%',
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-    }}>
-      <form style={{
-        height: '70%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        marginTop: '4.8rem',
-        gap: '15px',
-      }}>
-        <input className='inp' type="text" placeholder='firstname'/>
-        <input className='inp' type="text" placeholder='lastname'/>
-        <input className='inp' type="text" placeholder='username'/>
-        <input className='inp' type="text" placeholder='password'/>
-        <input className='inp' type="text" placeholder='confirm password'/>
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column-reverse',
-            alignItems: 'center',
-            height:'35px'
-        }}>
-            <input type="submit" value="submit" style={{
-                backgroundColor: '#c29d59',
-                padding: '8px',
-                width: '8rem',
-                color: '#ffff',
-                border: '1px #c29d59',
-                borderRadius: '4px',
-                fontSize: '1.3em'
-            }}/>
-        </div>
-        <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: '8px',
-            justifyContent: 'flex-end',
-        }}>
-        <p>Do you have an account?</p>
-        <button style={{
-            width: '6rem',
-            padding: '3px',
-            border: '1px solid #7288b5',
-            background: '#7288b5',
-            color: '#fff'
-        }}><Link style={{
-            textDecoration: 'none',
-            color: '#fff'
-        }} to={'../Login'}> Login </Link> </button>
+    <div className="container">
+      <div className="signups">
+        <h1>Sign Up</h1>
+        <form onSubmit={handleSignup}>
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+          <button type="submit" className="signup-button">
+            Sign Up
+          </button>
+        </form>
+        <div className="message">{message}</div>
       </div>
-      </form>
-      
     </div>
-  )
+  );
 }
 
-export default Signup
+export default Signup;

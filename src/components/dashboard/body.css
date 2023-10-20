@@ -1,0 +1,95 @@
+.body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.87);
+    display: flex;
+    flex-direction: row;
+}
+
+.right-box{
+    width: 18%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 3px 2px 13px 1px rgba(0, 0, 0, 0.429);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.right-box .profile{
+    display: flex;
+    margin: 16px;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.right-box .profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.right-box .profile .text h3, p{
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.right-box .links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    /* gap: 18px; */
+}
+
+.right-box > .links > a{
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.right-box > .links > a:hover{
+    color: #c29d59;
+}
+
+.popular{
+    width: 100%;
+    height: 100%;
+    margin: 12px;
+}
+
+.popul{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    margin: 12px;
+}
+
+.popul > img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.popul > p{
+    font-size: large;
+}
+
+.left-box{
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+    /* margin: 26px; */
+    box-shadow: 3px 2px 13px 1px rgba(0, 0, 0, 0.429);
+    border-radius: 15px;
+}
+
+.icon{
+    margin-left: 12px;
+}
+
