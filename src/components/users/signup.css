@@ -1,27 +1,58 @@
-/* .signups {
+.container{
+  background-color: #cccacacc;
+  height: 70vh;
+}
+
+.signups {
     margin: 20px;
+    width: 70%;
   }
   
-  .signups h1 {
-    font-size: 24px;
+  .signups > form{
+    background-color: #0056b3;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.6rem;
+    height: 50vh;
+    margin-left: 27rem;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  .signups > form > label{
+    width: 44%;
+
+  }
+
+  .signups > h1 {
+    font-size: 2rem;
     color: #333;
+    margin-top: 12re;
   }
   
-  .signups input, .signups button {
-    display: block;
-    width: 100%;
+  .signups input{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  .signup-button {
+  .signups button {
     background-color: #007bff; 
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
   }
   
   .signup-button:hover {
@@ -29,7 +60,10 @@
   }
   
   .signups .message {
-    color: #ff0000; 
+    color: #ffff; 
     margin-top: 10px;
+    margin-left: 38rem;
+    font-size: 1.2rem;
+    /* background-color: #c29d59; */
   }
-   */
+  

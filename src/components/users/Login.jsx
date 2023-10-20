@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -9,13 +10,6 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-  
-    if (username === 'garrix' && password === '12qwerty') {
-      setMessage('Login successful!');
-    
-    } else {
-      setMessage('Login failed. Please check your credentials.');
-    }
   };
 
   return (
@@ -38,7 +32,7 @@ function Login() {
             required
           />
           <button type="submit" className="login-button">
-            Login
+          <Link to={'./Body'}> Login</Link>
           </button>
         </form>
         <div className="message">{message}</div>

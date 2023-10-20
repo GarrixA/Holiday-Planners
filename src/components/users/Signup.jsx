@@ -25,8 +25,9 @@ function Signup() {
   return (
     <div className="container">
       <div className="signups">
-        <h1>Sign Up</h1>
+        <h1 >Sign Up</h1>
         <form onSubmit={handleSignup}>
+          <label>Username</label>
           <input
             type="text"
             placeholder="Username"
@@ -34,6 +35,7 @@ function Signup() {
             onChange={(e) => setUsername(e.target.value)}
             required
           />
+          <label>Password</label>
           <input
             type="password"
             placeholder="Password"
@@ -41,6 +43,7 @@ function Signup() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+          <label>Confirm Password</label>
           <input
             type="password"
             placeholder="Confirm Password"

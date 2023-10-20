@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Router} from 'react-router-dom';
 import About from './components/About'
 import Layout from './components/Layout'
 import Home from './components/Home'
@@ -12,10 +12,6 @@ import TourList from './components/TourList';
 import Login from './components/users/Login';
 import Signup from './components/users/Signup';
 import ResetP from './components/users/ResetP';
-import Body from './components/dashboard/Body';
-import CallTable from './components/table/TableArray';
-import Tour from './components/dashboard/Tour';
-import TableArray from './components/table/TableArray';
 
 function App() {
 
@@ -34,11 +30,8 @@ function App() {
           <Route path="Login" element={<Login/>}/>
           <Route path="Signup" element={<Signup/>}/>
           <Route path="ResetP" element={<ResetP/>}/>
-          
           <Route path="*" element={<Nopage/>}/>
       </Route>
-        <Route path="Body" element={<Body/>}/>
-        {/* <TableArray/> */}
       </Routes>
     </BrowserRouter>
     
