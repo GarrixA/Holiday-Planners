@@ -12,6 +12,7 @@ import TourList from './components/TourList';
 import Login from './components/users/Login';
 import Signup from './components/users/Signup';
 import ResetP from './components/users/ResetP';
+import Body from './components/dashboard/Body';
 
 function App() {
 
@@ -31,7 +32,9 @@ function App() {
           <Route path="Signup" element={<Signup/>}/>
           <Route path="ResetP" element={<ResetP/>}/>
           <Route path="*" element={<Nopage/>}/>
+          <Route path="Body" element={<Body/>}/> 
       </Route>
+      <Route path="Body" element={<Body/>}/> 
       </Routes>
     </BrowserRouter>
     

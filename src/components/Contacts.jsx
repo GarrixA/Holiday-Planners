@@ -59,7 +59,7 @@ function Contacts() {
             </div>
             <div className="email">
               <div></div>
-              <h1> <MdEmail style={{color: 'black', fontSize: '1.7rem'}}/> holidayplanners@gmail.com</h1>
+              <h1 style={{fontSize: '1.2rem', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '4px'}}> <MdEmail style={{color: 'black', fontSize: '1.7rem'}}/> holidayplanners@gmail.com</h1>
             </div>
             <div className="phone"  >
             

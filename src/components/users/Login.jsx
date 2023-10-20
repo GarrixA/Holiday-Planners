@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './login.css';
 import { Link } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
+
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -12,6 +14,7 @@ function Login() {
 
   };
 
+  const navigate = useNavigate();
   return (
     <div className="containerL">
       <div className="login-box">
@@ -31,8 +34,8 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit" className="login-button">
-          <Link to={'./Body'}> Login</Link>
+          <button type="submit" className="login-button" onClick={() => navigate("/Body")}>
+           Login
           </button>
         </form>
         <div className="message">{message}</div>

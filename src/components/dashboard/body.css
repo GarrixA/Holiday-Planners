@@ -65,13 +65,17 @@
 .popul{
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 8px;
     align-items: center;
-    margin: 12px;
+    margin-top: 12px;
+}
+
+.popul:hover{
+    background-color: lightseagreen;
 }
 
 .popul > img{
-    width: 20px;
+    width: 16px;
     height: 20px;
     border-radius: 50%;
 }

@@ -10,7 +10,7 @@ import {MdEventRepeat} from 'react-icons/md';
 import {SlCalender} from 'react-icons/sl';
 import {FaUmbrellaBeach} from 'react-icons/fa';
 import {AiFillMessage} from 'react-icons/ai';
-import CallTable from '../table/TableArray';
+import TableArray from '../table/TableArray';
 
 
 
@@ -27,13 +27,41 @@ function Body() {
                 </div>
             </div>
             <div className="links">
-                <Link to={'./Dashboard'}><span><TbLayoutDashboard fontSize='1.3rem' /> Dashboard</span></Link>
+                <Link to={'./Dashboard'} style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  gap: '4px',
+                  fontSize: '1.4rem',
+                }}><span><TbLayoutDashboard fontSize='1.3rem' /> Dashboard</span></Link>
                 {/* <Link to={'./Places'}><span><MdLocationOn fontSize='1.7rem'/> Places</span></Link> */}
-                <Link to={'./Tour'}><span><SlPlane fontSize='1.2rem'/>Tour</span></Link>
-                <Link to={'./Upcomming'}><MdEventRepeat fontSize='1.4rem'/><span>Bookings</span></Link>
+                <Link to={'./Tour'} style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: '4px',
+                  fontSize: '1.4rem',
+                  color: '#c29d59'
+                }}><span><SlPlane fontSize='1.2rem'/>Tour</span></Link>
+                <Link to={'./Upcomming'} style={{
+                  fontSize: '1.4rem',
+                  display: 'flex',
+                  flexDirection: 'row',
+                  gap: '5px',
+                }}><MdEventRepeat fontSize='1.4rem'/><span>Bookings</span></Link>
                 {/* <Link to={'./Campus'}><FaUmbrellaBeach fontSize='1.3rem'/><span>Campus</span></Link> */}
-                <Link to={'./Calendar'}><SlCalender/><span>Calender</span></Link>
-                <Link to={'./Chat'}><span><AiFillMessage fontSize='1.4rem'/>Chat</span></Link>
+                <Link to={'./Calendar'} style={{
+                  fontSize: '1.2rem',
+                  display: 'flex',
+                  flexDirection: 'row',
+                  gap: '4px'
+                }}><SlCalender/><span>Calender</span></Link>
+                <Link to={'./Chat'} style={{
+                  fontSize: '1.4rem',
+                  display:'flex',
+                  flexDirection: 'row',
+                  gap: '4px',
+                  alignItems: 'center'
+                }}><span><AiFillMessage fontSize='1.4rem'/>Chat</span></Link>
             </div>
             <div className="pop">
               <p style={{
@@ -73,7 +101,7 @@ function Body() {
         </div>
         <div className="left-box">
             
-           
+           <TableArray/>
           </div>
       </div>
   )
