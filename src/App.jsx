@@ -10,9 +10,9 @@ import Trending from './components/Trending';
 import OnePage from './components/OnePage';
 import TourList from './components/TourList';
 import Login from './components/users/Login';
-import Signup from './components/users/Signup';
 import ResetP from './components/users/ResetP';
 import Body from './components/dashboard/Body';
+import SignUp from './components/users/SidgnUp'
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
           <Route path="OnePage" element={<OnePage/>}/>
           <Route path="TourList" element={<TourList/>}/>
           <Route path="Login" element={<Login/>}/>
-          <Route path="Signup" element={<Signup/>}/>
+          <Route path="SignUp" element={<SignUp/>}/>
           <Route path="ResetP" element={<ResetP/>}/>
           <Route path="*" element={<Nopage/>}/>
           <Route path="Body" element={<Body/>}/> 
