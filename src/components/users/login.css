@@ -1,72 +1,109 @@
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
-  } */
-  
-  .containerL {
-    background-color: #5c4f37;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding: 20px;
-    width: 100%;
-    height: 80vh;
-   
-  }
-  
-  .login-box {
-    margin-top: 100px;
-    /* background-color: #ff0000; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80%;
-    justify-content: center;
-    background-color: #ffffff;
-    width: 40%;
-    margin-left: 26rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
 
-  .login-box > form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.signup-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signup-inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-inputs > input{
+  padding: 10px;
+  margin: 0px 0px 7px 60px;
+  border: 1px solid #c29d59;
+  border-radius: 4px;
+  width: 70%;
   
-  h1 {
-    font-size: 24px;
-    color: #333;
+}
+
+.signup-inputs > label{
+  color: #000;
+  margin-left: 60px;
+}
+
+.signup-tittle{
+  /* background-color: red; */
+  width: 80%;
+  /* height: 60px; */
+  padding: 12px;
+}
+
+.signup-tittle > h1{
+  text-align: center;
+  color: #000;
+}
+
+.signup-wrapper{
+  align-items: center;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 3%;
+}
+
+.signup-button{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-button > button{
+   width: 150px;
+  color: #ffff;
+  background-color: #c29d59;
+  border: 10px solid #c29d59;
+  text-align: center;
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 1.2em;
+}
+
+.signup-button > button:hover{
+  animation: bubble 0.4s ease-in;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1);
   }
-  
-  .login-box > form >input, .login-button {
-    display: block;
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  50% {
+    transform: scale(1.2);
   }
-  
-  .login-button {
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  100% {
+    transform: scale(1);
   }
-  
-  .login-button:hover {
-    background-color: #172918;
-  }
-  
-  .message {
-    color: #ff0000;
-    margin-top: 10px;
-  }
-  
+}
+
+.account{
+  display: flex;
+  margin: 12px 12px 7px 7px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+.signup-image > img{
+  width: 100%;
+  height: 50vh;
+}
+
+.signup-background{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
