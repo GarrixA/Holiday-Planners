@@ -23,7 +23,7 @@ function Login() {
                      <h5><Link to={'/SignUp'} style={{color: '#c29d59', textDecoration: 'none'}}>Sin Up</Link></h5>
                 </div>
                 <div className="signup-button">
-                    <button>Login</button>
+                    <button><Link to={'/Body'}  style={{color: '#fff', textDecoration: 'none'}}>Login</Link></button>
                 </div>
             </div>
             <div className="signup-image">

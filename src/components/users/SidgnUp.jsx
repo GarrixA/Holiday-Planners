@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function SidgnUp() {
+
+    const [username, setUsername] = useState('')
+
+
   return (
     <div className='signup-container'>
         <div className="signup-background">
@@ -27,10 +31,10 @@ function SidgnUp() {
                 </div>
                 <div className="account">
                     <h5>Do you have an account?</h5>
-                    <h5><Link to={'/Login'} style={{color: '#c29d59', textDecoration: 'none'}}> Sign in</Link></h5>
+                    <h5 ><Link to={'/Login'} style={{color: '#c29d59', textDecoration: 'none'}}> Sign in</Link></h5>
                 </div>
                 <div className="signup-button">
-                    <button>Sign Up</button>
+                    <button> Sign Up</button>
                 </div>
             </div>
             <div className="signup-image">
