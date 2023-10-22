@@ -8,9 +8,8 @@ import {MdLocationOn} from 'react-icons/md';
 import {SlPlane} from 'react-icons/sl';
 import {MdEventRepeat} from 'react-icons/md';
 import {SlCalender} from 'react-icons/sl';
-import {FaUmbrellaBeach} from 'react-icons/fa';
 import {AiFillMessage} from 'react-icons/ai';
-import TableArray from '../table/TableArray';
+import Tours from './Tours';
 
 
 
@@ -101,7 +100,7 @@ function Body() {
         </div>
         <div className="left-box">
             
-           <TableArray/>
+           <Tours/>
           </div>
       </div>
   )

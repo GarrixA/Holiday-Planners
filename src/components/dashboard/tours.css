@@ -1,25 +1,60 @@
-
-
-.list{
-    width: 100%;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .Tour{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.tours{
+    top: 120px;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .Tour >.btn{
+    margin-top: 1rem;
+    border: none;
+    background-color: #1d4ed8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #ccc;
+  }
+  
+  .form-group{
     display: flex;
-    flex-direction: row;
-    gap: 12px;
-    background-color: red;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90%;
-    height: 14vh;
-    margin-top: 2rem;
-}
-
-.tours button{
-    width: 60px;
-    height: 30px;
-}
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
+  
+  .form-group label{
+    margin-bottom: 0.2rem;
+  }
+  
+  .Tour > #btn{
+    position: relative;
+    top: -40px;
+    left: 68rem;
+    right: 10;
+    margin-top: 1rem;
+    border: none;
+    background-color: #c29d59;
+    color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #ccc;
+    width: 100px;
+  }
