@@ -26,7 +26,7 @@ function Navbar() {
         <div className="black-nav">
           <div  className='contacts'>
             <div className='flex-icon'>
-              <HiOutlineMail color='#c29d59' className='icons1'/>
+              <HiOutlineMail color='#c29d59' className='icons1' id="icons1"/>
               <h1>aphrogarrix10@gmail.com</h1>
             </div>
               

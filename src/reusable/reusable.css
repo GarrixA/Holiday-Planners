@@ -62,7 +62,7 @@ li{
 
  
 
-h1{
+.flex-icon h1{
     color: #ffff;
     font-size: 1.2rem;
     
@@ -168,4 +168,107 @@ p{
     position: absolute;
     width: 100%;
     height: 5px;
+}
+
+/* Nav responsive */
+@media screen and (max-width: 800px){
+
+    /* black navigation */
+    .wrap{
+        max-width: 800px;
+    }
+    .main-wrap{
+        max-width: 800px;
+        height: 3rem;
+    }
+    .black-nav{
+        max-width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 3rem;
+    }
+
+    .black-nav > .contacts > hr{
+        height: 40px;
+    }
+
+    .black-nav > .contacts{
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 2;
+        max-width: 50%;
+        flex-grow: 1;
+        margin-left: 1rem;
+        align-items: center;
+    }
+
+    .black-nav > .contacts > .flex-icon{
+        width: 100%;
+        height: 50%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0rem;
+    }
+
+    .black-nav > .contacts > .flex-icon > .icons1{
+        height: 50%;
+        font-size: 20px;
+    }
+    
+    .icons1 > h1{
+        width: 18%;
+        box-sizing: none;
+    }
+
+    .black-nav > .contacts > .flex-icon h1{
+        font-size: 12px;
+        margin-top: 0rem;
+
+    }
+
+    .black-nav > .contacts h1{
+        font-size: 15px;
+    }
+
+    .black-nav > .socials{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-basis: 1;
+        max-width: 80%;
+        flex-grow: 1;
+        margin-top: 0rem;
+    }
+
+    .black-nav > .socials > ul > hr{
+        height: 35px;
+    }
+
+
+    .black-nav > .socials > ul{
+        max-width: 80%;
+        height: 50%;
+        padding: 0px;
+    }
+
+    /* white navigation */
+    .white-nav{
+        max-width: 74%;
+        height: 60px;
+        position: fixed;
+        top: -15px;
+    }
+
+    .white-nav > .nw-logo >  img{
+        width: 50%;
+        height: 30%;
+    }
+
+    .white-nav > .nw-others > .btn > button{
+        padding: 6px;
+        font-size: 1rem;
+    }
 }

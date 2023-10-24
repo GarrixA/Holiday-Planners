@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Tours.css'
+import './tours.css'
 import Table from './Table'
 import Modal from './Modal'
 
@@ -24,6 +24,15 @@ function Tours() {
     }
   ]);
 
+  const [tours, setTours] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const fetchTour = () =>{
+    
+  }
+
+  
+
   const [rowToEdit, setRowToEdit] = useState(null)
 
   const handleDeleteRow = (targetIndex) =>{
@@ -46,19 +55,24 @@ function Tours() {
 
   return (
     <>
-      <div className='Tour'>
-       
-      <button id='btn' onClick={() => setOpenModal(true)}>Add a tour</button>
-         {openModal && <Modal 
-         closeModal ={() => 
-         setOpenModal(false)} 
-         onSubmit={handleSubmit}
-         defaultValue={rowToEdit !== null && rows[rowToEdit]}
-         />}
-
-        <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow}/>
-
+      <div className="container">
+        <div className="top">
+          <h1>Toour</h1>
+        </div>
+        <div className='Tour'>
         
+        <button id='btn' onClick={() => setOpenModal(true)}>Add a tour</button>
+          {openModal && <Modal 
+          closeModal ={() => 
+          setOpenModal(false)} 
+          onSubmit={handleSubmit}
+          defaultValue={rowToEdit !== null && rows[rowToEdit]}
+          />}
+
+          <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow}/>
+
+          
+        </div>
       </div>
     </>
   )

@@ -173,3 +173,20 @@
     height: 500px;
     margin-left: 4rem;
 }
+
+/* responsive */
+
+@media screen and (max-width: 800px){
+    .bg{
+        width: 800px;
+
+    }
+
+    .bg .imag{
+        max-width: 800px;
+    }
+
+    .bg .details{
+        width: 100%;
+    }
+}

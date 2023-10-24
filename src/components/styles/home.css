@@ -72,3 +72,49 @@
     border-radius: 2px;
 }
 
+.main-content .key .di p{
+    font-size: 1.9rem;
+}
+
+.main-content .key .di h3{
+    background-color: #c29d59;
+    font-size: 2.7rem;
+}
+
+
+/* responsive */
+
+@media screen  and (max-width: 800px){
+    .main{
+        max-width: 800px;
+    }
+    
+    .main-content{
+        max-width: 800px;
+    }
+    
+    .main-content > .key{
+        max-width: 100%;
+    }
+    
+    .main-content .key{
+        max-width: 680px;
+    }
+    
+    .main-content .key .di{
+        display: flex;
+        flex-shrink: 1;
+    }
+
+    .main-content .key .di h2{
+        font-size: 3rem;
+    }
+
+    .main-content .key .di h3{
+        font-size: 2.7rem;
+        color: #fff;
+        padding: 3px;
+    }
+    
+}
+

@@ -10,8 +10,9 @@ import OnePage from './components/OnePage';
 import TourList from './components/TourList';
 import Login from './components/users/Login';
 import ResetP from './components/users/ResetP';
-import Body from './components/dashboard/Body';
 import SignUp from './components/users/SidgnUp'
+import Body from './components/dashboard/Body';
+import Tours from './components/dashboard/Tours';
 
 function App() {
 
@@ -26,13 +27,18 @@ function App() {
           <Route path="Contacts" element={<Contacts/>}/>
           <Route path="OnePage" element={<OnePage/>}/>
           <Route path="TourList" element={<TourList/>}/>
-          <Route path="Login" element={<Login/>}/>
-          <Route path="SignUp" element={<SignUp/>}/>
           <Route path="ResetP" element={<ResetP/>}/>
           <Route path="*" element={<Nopage/>}/>
           
       </Route>
-      <Route path="Body" element={<Body/>}/> 
+
+      <Route path="Login" element={<Login/>}/>
+          <Route path="SignUp" element={<SignUp/>}/>
+      <Route path='/Body' element={<Body/>}>
+        <Route path='Tours' element={<Tours/>}/>
+      </Route>
+
+      
       </Routes>
     </BrowserRouter>
     

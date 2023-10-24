@@ -4,7 +4,11 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+ .top h1{
+  position: relative;
   
+ }
   .Tour{
     display: flex;
     flex-direction: column;
@@ -46,9 +50,9 @@
   .Tour > #btn{
     position: relative;
     top: -40px;
-    left: 68rem;
+    left: 51rem;
     right: 10;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     border: none;
     background-color: #c29d59;
     color: #fff;

@@ -6,11 +6,22 @@
     left: 0;
     top: 0;
     right: 0;
-    
-    
-    
+    animation-name: modal;
+    animation-duration: .9s; 
+}
+
+@keyframes modal{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
     
 }
+ 
+
+
 .right-btn{
     float: right;
     color: #ffff;
@@ -74,3 +85,5 @@
     background-size: cover;
     background-position: center;
 }
+
+/* responsive */

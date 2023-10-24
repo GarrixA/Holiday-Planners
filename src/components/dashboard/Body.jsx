@@ -1,10 +1,9 @@
 import React from 'react';
 import './body.css';
-import imageA from './images/prof.png';
-import { Link } from 'react-router-dom';
+import imageA from '../../images/10001.png'
+import { Link, Outlet } from 'react-router-dom';
 import popular from './Popular';
 import {TbLayoutDashboard} from 'react-icons/tb';
-import {MdLocationOn} from 'react-icons/md';
 import {SlPlane} from 'react-icons/sl';
 import {MdEventRepeat} from 'react-icons/md';
 import {SlCalender} from 'react-icons/sl';
@@ -20,10 +19,9 @@ function Body() {
         <div className="right-box">
             <div className="profile">
                 <img src={imageA} alt="img" />
-                <div className="text">
-                    <h3>Garrix</h3>
-                    <p>Aphrodis</p>
-                </div>
+            </div>
+            <div className="right-text">
+              <h1>Main menu</h1>
             </div>
             <div className="links">
                 <Link to={'./Dashboard'} style={{
@@ -33,7 +31,7 @@ function Body() {
                   fontSize: '1.4rem',
                 }}><span><TbLayoutDashboard fontSize='1.3rem' /> Dashboard</span></Link>
                 {/* <Link to={'./Places'}><span><MdLocationOn fontSize='1.7rem'/> Places</span></Link> */}
-                <Link to={'./Tour'} style={{
+                <Link to={'Tours'} style={{
                   display: 'flex',
                   flexDirection: 'row',
                   alignItems: 'center',
@@ -98,9 +96,10 @@ function Body() {
                 }}>logout</h1>
             </div>
         </div>
+
         <div className="left-box">
-            
-           <Tours/>
+            <Outlet/>
+
           </div>
       </div>
   )
