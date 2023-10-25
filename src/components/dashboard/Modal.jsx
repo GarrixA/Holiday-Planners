@@ -24,7 +24,7 @@ const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   };
 
   const validateForm = () => {
-    if (formState.destination && formState.duration && formState.group && formState.price) {
+    if (formState.destination && formState.duration && formState.people && formState.price) {
       return true;
     } else {
       return false;
@@ -78,7 +78,7 @@ const Modal = ({ closeModal, onSubmit, defaultValue }) => {
             />
 
           </div>
-          <button type="submit" className="btn">Submit</button>
+          <button type="submit" className="btn" onClick={handleSubmit}>Submit</button>
         </form>
       </div>
     </div>

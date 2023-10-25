@@ -2,7 +2,7 @@ import React from 'react'
 import './Table.css'
 import {BsFillTrashFill, BsFillPencilFill} from 'react-icons/bs'
 
-const Table = ({rows, deleteRow, editRow}) => {
+const Table = ({/*rows,*/ tours, deleteRow, editRow}) => {
     return (
         <div className='table-wrapper'>
             <table className='table'>
@@ -17,12 +17,12 @@ const Table = ({rows, deleteRow, editRow}) => {
                 </thead>
                 <tbody>
                     {
-                        rows.map((row, idx) =>{
+                        tours.map((row, idx) =>{
                             return <tr key={idx}>
                                 <td>{row.destination}</td>
-                                <td>{row.duration}</td>
-                                <td>{row.group}</td>
-                                <td>{row.price}</td>
+                                <td>{row.Duration}</td>
+                                <td>{row.GroupSize}</td>
+                                <td>{row.Price}</td>
                                 <td >
                                     <span className='actions'>
                                         <BsFillTrashFill className='delete-btn' onClick={() => deleteRow(idx)}/>
