@@ -62,3 +62,13 @@
     box-shadow: 0px 5px 5px #ccc;
     width: 100px;
   }
+  .toast{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    color: blue;
+  }
+  .Toastfy{
+    background-color: #fff;
+  }

@@ -13,7 +13,7 @@ function SidgnUp() {
     const [confirPassword, setConfirmPassword] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [fullName, setFullName] = useState('');
-    const [error, setError] = useState(null);
+    const [error, setError] = useState({});
     console.log(email, fullName, password);
 
     const handleSignup = (e) => {

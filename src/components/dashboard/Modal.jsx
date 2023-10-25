@@ -4,9 +4,9 @@ import './Modal.css';
 const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   const [formState, setFormState] = useState(defaultValue || {
     destination: '',
-    duration: '',
-    group: '',
-    price: '',
+    Duration: '',
+    GroupSize: '',
+    Price: '',
   });
 
   const handlePage = (e) => {
@@ -24,7 +24,7 @@ const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   };
 
   const validateForm = () => {
-    if (formState.destination && formState.duration && formState.people && formState.price) {
+    if (formState.destination && formState.Duration && formState.GroupSize && formState.Price) {
       return true;
     } else {
       return false;
@@ -55,25 +55,25 @@ const Modal = ({ closeModal, onSubmit, defaultValue }) => {
 
           </div>
           <div className="form-group">
-            <label htmlFor="duration">Duration</label>
-            <input name="duration" 
-            value={formState.duration} 
+            <label htmlFor="Duration">Duration</label>
+            <input name="Duration" 
+            value={formState.Duration} 
             onChange={handleChange} 
             />
 
           </div>
           <div className="form-group">
-            <label htmlFor="group">Group size</label>
-            <input name="group" 
-            value={formState.group} 
+            <label htmlFor="GroupSize">Group size</label>
+            <input name="GroupSize" 
+            value={formState.GroupSize} 
             onChange={handleChange} 
             />
 
           </div>
           <div className="form-group">
-            <label htmlFor="price">Price</label>
-            <input name="price" 
-            value={formState.price} 
+            <label htmlFor="Price">Price</label>
+            <input name="Price" 
+            value={formState.Price} 
             onChange={handleChange} 
             />
 
