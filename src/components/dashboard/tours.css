@@ -5,6 +5,22 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  .container{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .top{
+    /* background-color: #1d4ed8; */
+    height: 100px;
+    box-shadow: 0px 5px 5px #ccc;
+    border-radius: 12px;
+  }
+
  .top h1{
   position: relative;
   
@@ -13,14 +29,13 @@
     display: flex;
     flex-direction: column;
     top: 120px;
-    position: relative;
-    height: 100vh;
+    /* height: 100vh; */
+    gap: 12px;
   }
   
   .Tour >.btn{
     margin-top: 1rem;
     border: none;
-    background-color: #1d4ed8;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -46,21 +61,29 @@
   .form-group label{
     margin-bottom: 0.2rem;
   }
+
+  .Tour > .wrp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 54px;
+  }
+
+  .Tour > .wrp > h1{
+    font-size: 2rem;
+  }
   
-  .Tour > #btn{
-    position: relative;
-    top: -40px;
-    left: 51rem;
-    right: 10;
-    /* margin-top: 1rem; */
+  .Tour > .wrp > #btn{
     border: none;
     background-color: #c29d59;
     color: #fff;
-    padding: 1rem 1rem;
+    padding: .60rem 1rem;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0px 5px 5px #ccc;
-    width: 100px;
+    width: 150px;
+    font-size: .92rem;
   }
   .toast{
     width: 50px;

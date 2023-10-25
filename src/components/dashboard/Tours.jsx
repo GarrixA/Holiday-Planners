@@ -3,28 +3,11 @@ import './tours.css'
 import Table from './Table'
 import Modal from './Modal'
 import axios from 'axios';
+import {TbCirclePlus} from 'react-icons/tb'
 import {ToastContainer, toast } from 'react-toastify';
 
 function Tours() {
-  // const [openModal, setOpenModal] = useState(false);
-  // const [rows, setRows] = useState([
-  //   {
-  //     destination: 'Rwanda',
-  //     duration: '4 months',
-  //     group: '100+ people',
-  //     price: '$ 750',
-  //   },{
-  //     destination: 'Tanzania',
-  //     duration: '2 weeks',
-  //     group: '150+ people',
-  //     price: '$ 750',
-  //   },{
-  //     destination: 'Nairobi',
-  //     duration: '12 weeks',
-  //     group: '90+ people',
-  //     price: '$ 750',
-  //   }
-  // ]);
+
   
   const [openModal, setOpenModal] = useState(false);
   const [tours, setTours] = useState([]);
@@ -83,25 +66,31 @@ function Tours() {
   return (
     <>
       <div className="container">
-        
-        <div className="top">
-          <h1>Toour</h1>
-        </div>
+      {/* <ToastContainer className="toast"/> */}
         <div className='Tour'>
-        
-        <button id='btn' onClick={() => setOpenModal(true)}>Add a tour</button>
-          {openModal && <Modal 
-          closeModal ={() => 
-          setOpenModal(false)} 
-          onSubmit={handleSubmit}
-          defaultValue={rowToEdit !== null && tours[rowToEdit]}
-          />}
+
+          <div className="wrp">
+          <h1>Tours</h1>
+          <button id='btn' onClick={() => setOpenModal(true)} style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: '5px'
+          }}> <TbCirclePlus fontSize="2rem"/> Add a tour</button>
+            {openModal && <Modal 
+            closeModal ={() => 
+            setOpenModal(false)} 
+            onSubmit={handleSubmit}
+            defaultValue={rowToEdit !== null && tours[rowToEdit]}
+            />}
+
+        </div>
 
           <Table /*rows={rows}*/ tours={tours} deleteRow={handleDeleteRow} editRow={handleEditRow}/>
 
           
         </div>
-        <ToastContainer className="toast"/>
+        
       </div>
     </>
   )
