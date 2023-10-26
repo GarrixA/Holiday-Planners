@@ -36,6 +36,14 @@ th{
     text-overflow: ellipsis;
 }
 
+.table img{
+    width: 90px;
+    height: 40px; 
+    border: 2px solid #c29d593a;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+
 .table tbody tr:hover {
     background-color: #eee;
 }

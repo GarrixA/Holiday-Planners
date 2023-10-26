@@ -53,6 +53,9 @@ function Tours() {
     setRowToEdit(idx);
     setOpenModal(true);
   }
+
+  
+
   const handleSubmit = (newRow) =>{
     rowToEdit === null ?
     setTours([...tours, newRow]) :

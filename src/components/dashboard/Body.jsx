@@ -24,47 +24,14 @@ function Body() {
               <h1>Main menu</h1>
             </div>
             <div className="links">
-                <Link to={'./Dashboard'} style={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  gap: '4px',
-                  fontSize: '1.4rem',
-                }}><span><TbLayoutDashboard fontSize='1.3rem' /> Dashboard</span></Link>
-                {/* <Link to={'./Places'}><span><MdLocationOn fontSize='1.7rem'/> Places</span></Link> */}
-                <Link to={'Tours'} style={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  gap: '4px',
-                  fontSize: '1.4rem',
-                  color: '#c29d59'
-                }}><span><SlPlane fontSize='1.2rem'/>Tour</span></Link>
-                <Link to={'./Upcomming'} style={{
-                  fontSize: '1.4rem',
-                  display: 'flex',
-                  flexDirection: 'row',
-                  gap: '5px',
-                }}><MdEventRepeat fontSize='1.4rem'/><span>Bookings</span></Link>
-                {/* <Link to={'./Campus'}><FaUmbrellaBeach fontSize='1.3rem'/><span>Campus</span></Link> */}
-                <Link to={'./Calendar'} style={{
-                  fontSize: '1.2rem',
-                  display: 'flex',
-                  flexDirection: 'row',
-                  gap: '4px'
-                }}><SlCalender/><span>Calender</span></Link>
-                <Link to={'./Chat'} style={{
-                  fontSize: '1.4rem',
-                  display:'flex',
-                  flexDirection: 'row',
-                  gap: '4px',
-                  alignItems: 'center'
-                }}><span><AiFillMessage fontSize='1.4rem'/>Chat</span></Link>
+                <Link ><span><TbLayoutDashboard/> Dashboard</span></Link>
+                <Link to="./Tours"><span><SlPlane />Tour</span></Link>
+                <Link ><MdEventRepeat /><span>Bookings</span></Link>
+                <Link><SlCalender/><span>Calender</span></Link>
+                <Link ><span><AiFillMessage />Chat</span></Link>
             </div>
             <div className="pop">
-              <p style={{
-                fontSize: '1.3rem',
-                margin: '12px',
-              }}>Popular</p>
+              <p>Popular</p>
             <div className="popular">
             {
           popular.map(popu =>(

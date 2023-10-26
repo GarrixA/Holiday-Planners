@@ -24,7 +24,7 @@ const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   };
 
   const validateForm = () => {
-    if (formState.destination && formState.Duration && formState.GroupSize && formState.Price) {
+    if (formState.destination && formState.Duration && formState.GroupSize && formState.Price  && formState.backdropImage) {
       return true;
     } else {
       return false;
@@ -78,7 +78,15 @@ const Modal = ({ closeModal, onSubmit, defaultValue }) => {
             />
 
           </div>
-          <button type="submit" className="btn" onClick={handleSubmit}>Submit</button>
+
+          <div className="form-group">
+            <label htmlFor="Image">Image</label>
+            <input name="Image" type='file' 
+            value={formState.backdropImage} 
+            onChange={handleChange}
+            />
+            </div>
+          <button type="submit" className="btn" onClick={handleSubmit}>Add</button>
         </form>
       </div>
     </div>
