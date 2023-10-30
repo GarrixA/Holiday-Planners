@@ -9,6 +9,7 @@ import {MdEventRepeat} from 'react-icons/md';
 import {SlCalender} from 'react-icons/sl';
 import {AiFillMessage} from 'react-icons/ai';
 import Tours from './Tours';
+import {BiLogInCircle} from 'react-icons/bi'
 
 
 
@@ -53,14 +54,17 @@ function Body() {
             <div className="logout">
                 <h1 style={{
                   fontSize: '18px',
-                  marginLeft: '3rem',
+                  marginLeft: '1rem',
                   marginTop: '2rem',
                   backgroundColor: '#c29d59',
-                  width: '60px',
+                  width: '100px',
                   textAlign: 'center',
                   padding: '4px',
-                  color: '#fff'
-                }}>logout</h1>
+                  color: '#fff',
+                  display: 'flex',
+                  gap: '5px',
+                  borderRadius: '4px'
+                }}><BiLogInCircle/> logout</h1>
             </div>
         </div>
 

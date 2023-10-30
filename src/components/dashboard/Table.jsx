@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Table.css'
 import {BsFillTrashFill, BsFillPencilFill} from 'react-icons/bs'
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 // const [tours, setTours] = useState([]);
 
@@ -28,6 +30,46 @@ import {BsFillTrashFill, BsFillPencilFill} from 'react-icons/bs'
     //     handleEdit();
     // }, []);
 
+    const [price, setPrice] = useState("");
+    const [destination, setDestination] = useState("");
+    const [Duration, setDuration] = useState("");
+    const [image, setImage] = useState("");
+    const [GroupSize, setGroupsize] = useState("");
+    const [update, setUpdate] = useState("");
+
+    const formData = new FormData();
+    formData.append("backdropImage", image);
+    formData.append("Duration", Duration);
+    formData.append("destination", destination);
+    formData.append("GroupSize", GroupSize);
+    formData.append("Price", price);
+
+    useEffect(()=>{
+        axios({
+            method: "PUT",
+            url: "https://holiday-planner-4lnj.onrender.com/api/v1/tour/update",
+            data: formData,
+            headers: {
+                "Content-Type": "multipart/form-data",
+              },
+        })
+        .then((response)=>{
+            e.preventDefault();
+            console.log(response.data);
+          })
+    
+          .catch((error)=>{
+            console.log(error)
+            toast.error(error.message)
+          })
+          const handleEdit = ((e)=>{
+            setUpdate({
+                ...update, [e.target.formData]: e.target.value
+            })
+          })
+    
+    }, []);
+      
 const Table = ({/*rows,*/ tours, deleteRow, editRow}) => {
     return (
         <div className='table-wrapper'>
@@ -56,7 +98,7 @@ const Table = ({/*rows,*/ tours, deleteRow, editRow}) => {
                                 <td >
                                     <span className='actions'>
                                         <BsFillTrashFill className='delete-btn' onClick={() => deleteRow(idx)}/>
-                                        <BsFillPencilFill onClick={() => editRow(idx)}/>
+                                        <BsFillPencilFill onClick={() => /*editRow(idx)*/ handleEdit}/>
                                     </span>
                                 </td>
                             </tr>

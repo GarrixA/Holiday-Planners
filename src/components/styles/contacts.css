@@ -179,6 +179,7 @@
 @media screen and (max-width: 800px){
     .bg{
         width: 800px;
+        height: 280vh;
 
     }
 
@@ -188,5 +189,57 @@
 
     .bg .details{
         width: 100%;
+    }
+    .details{
+        width: 800px;
+    }
+
+    .details form{
+        margin-left: 2rem;
+        position: none;
+    }
+
+    .details .ask{
+        width: 400px;
+    }
+
+    .details .ask h1{
+        font-size: 0.8rem;
+    }
+   .tittle h4{
+        font-size: .8rem;
+    }
+
+    .question{
+        width: 300px;
+    }
+
+    .div p{
+        font-size: 1rem;
+    }
+    .email h1, .phone h1{
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+    }
+    .add-map{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .add-map .address{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adr-wr{
+        width: 100%;
+        margin-left: 5rem;
+    }
+    .map{
+        width: 500px;
+        height: 300px;
+        margin-left: 0rem;
     }
 }

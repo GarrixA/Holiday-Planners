@@ -4,6 +4,7 @@ import image1 from '../../images/login.png';
 import { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function SidgnUp() {
     const [firstName, setFirstName] = useState('');

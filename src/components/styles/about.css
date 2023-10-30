@@ -151,18 +151,17 @@
 }
 
 /* responsive */
-
 @media screen and (max-width: 800px){
     .about{
-        max-width: 800px;
+        max-width: 375px;
         height: 205vh;
     }
     
     .about .where{
         height: 250px;
-        width: 40%;
+        width: 80%;
         bottom: 80px;
-        margin-left: 4rem;
+        margin-left: 2rem;
         box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.096);
     }
 
@@ -182,12 +181,14 @@
         flex-direction: column;
         align-items: center;
         gap: 0;
+        width: 375px;
     }
     .m-part .image{
         margin-left: 0;
         padding: 0;
         display: flex;
         flex-direction: row;
+        width: 80%;
     }
 
     .m-part .image .front{
@@ -200,9 +201,19 @@
     }
 
     .m-part .image .back{
-        width: 220px;
+        width: 90%;
     }
 
+    .m-part .image .front img{
+        width: 100px;
+        height:80px;
+    }
+
+    .m-part .image .back img{
+        width: 320px;
+        height: 300px;
+        margin-right: 60px;
+    }
     .m-part .texts{
         max-width: 100%;
         display: flex;

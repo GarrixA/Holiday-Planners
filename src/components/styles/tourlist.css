@@ -197,3 +197,61 @@ h1{
 }
 
 /* responsive */
+@media screen and (max-width: 800px){
+    .main{
+        width: 800px;
+        
+    }
+
+    .main .choose{
+        width: 50%;
+        height: 2%;
+        border: 2px solid rgba(0, 0, 0, 0.425);
+        padding: 0;
+        display: flex;
+        position: relative;
+        bottom: 25px;
+        background-color: #fff;
+        justify-content: space-between;
+    }
+    .main .choose .side{
+        height: 40px;
+        display: flex;
+        font-size: 1rem;
+        gap: 4px;
+        
+    }
+    .main .choose .middle{
+        /* background-color: blue; */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        position: relative;
+    }
+    .find{
+         width: 40%;
+         top: 0;
+         right: 40px;
+    }
+    .tours{
+        display: flex;
+        flex-direction: row;
+        height: 205vh;
+    }
+    .main-tour{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 0vh;
+    }
+    .tourlist{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .tours-card{
+        height: 85vh;
+    }
+}
+
